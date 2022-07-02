@@ -18,6 +18,12 @@
 		40F2D6B12870CA7100F57DAC /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40F2D6AD2870CA7100F57DAC /* Poppins-SemiBold.ttf */; };
 		40F2D6B22870CA7100F57DAC /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40F2D6AE2870CA7100F57DAC /* Poppins-Medium.ttf */; };
 		40F2D6CB2870CE2100F57DAC /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40F2D6CA2870CE2100F57DAC /* LoginViewController.xib */; };
+		40F2D6CF2870D39400F57DAC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F2D6CD2870D39400F57DAC /* HomeViewController.swift */; };
+		40F2D6D02870D39400F57DAC /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40F2D6CE2870D39400F57DAC /* HomeViewController.xib */; };
+		40F2D6D32870D86200F57DAC /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F2D6D22870D86200F57DAC /* GlobalHelpers.swift */; };
+		40F2D6D52870D8DA00F57DAC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F2D6D42870D8DA00F57DAC /* Extensions.swift */; };
+		40F2D6D82870DFE400F57DAC /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F2D6D62870DFE400F57DAC /* WebViewController.swift */; };
+		40F2D6D92870DFE400F57DAC /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40F2D6D72870DFE400F57DAC /* WebViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +40,12 @@
 		40F2D6AD2870CA7100F57DAC /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		40F2D6AE2870CA7100F57DAC /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		40F2D6CA2870CE2100F57DAC /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		40F2D6CD2870D39400F57DAC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		40F2D6CE2870D39400F57DAC /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		40F2D6D22870D86200F57DAC /* GlobalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelpers.swift; sourceTree = "<group>"; };
+		40F2D6D42870D8DA00F57DAC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		40F2D6D62870DFE400F57DAC /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		40F2D6D72870DFE400F57DAC /* WebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +180,8 @@
 		40F2D6BA2870CBBB00F57DAC /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				40F2D6D22870D86200F57DAC /* GlobalHelpers.swift */,
+				40F2D6D42870D8DA00F57DAC /* Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -249,6 +263,8 @@
 		40F2D6C62870CCD200F57DAC /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				40F2D6CD2870D39400F57DAC /* HomeViewController.swift */,
+				40F2D6CE2870D39400F57DAC /* HomeViewController.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -270,6 +286,8 @@
 		40F2D6C92870CCE700F57DAC /* Web */ = {
 			isa = PBXGroup;
 			children = (
+				40F2D6D62870DFE400F57DAC /* WebViewController.swift */,
+				40F2D6D72870DFE400F57DAC /* WebViewController.xib */,
 			);
 			path = Web;
 			sourceTree = "<group>";
@@ -343,11 +361,13 @@
 				40F2D6CB2870CE2100F57DAC /* LoginViewController.xib in Resources */,
 				40F2D6A22870C0C400F57DAC /* LaunchScreen.storyboard in Resources */,
 				40F2D6B22870CA7100F57DAC /* Poppins-Medium.ttf in Resources */,
+				40F2D6D92870DFE400F57DAC /* WebViewController.xib in Resources */,
 				40F2D69F2870C0C400F57DAC /* Assets.xcassets in Resources */,
 				40F2D6B02870CA7100F57DAC /* Poppins-Bold.ttf in Resources */,
 				40F2D6B12870CA7100F57DAC /* Poppins-SemiBold.ttf in Resources */,
 				40F2D69D2870C0C200F57DAC /* Main.storyboard in Resources */,
 				40F2D6AF2870CA7100F57DAC /* Poppins-Regular.ttf in Resources */,
+				40F2D6D02870D39400F57DAC /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,8 +379,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				40F2D69A2870C0C200F57DAC /* LoginViewController.swift in Sources */,
+				40F2D6D52870D8DA00F57DAC /* Extensions.swift in Sources */,
 				40F2D6962870C0C200F57DAC /* AppDelegate.swift in Sources */,
 				40F2D6982870C0C200F57DAC /* SceneDelegate.swift in Sources */,
+				40F2D6D82870DFE400F57DAC /* WebViewController.swift in Sources */,
+				40F2D6D32870D86200F57DAC /* GlobalHelpers.swift in Sources */,
+				40F2D6CF2870D39400F57DAC /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

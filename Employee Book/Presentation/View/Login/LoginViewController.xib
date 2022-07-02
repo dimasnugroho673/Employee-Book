@@ -3,13 +3,23 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Employee_Book" customModuleProvider="target">
             <connections>
+                <outlet property="nameTextField" destination="tvU-JI-J7X" id="E4g-rH-Sdw"/>
+                <outlet property="nextButton" destination="yww-Kq-3K0" id="xm9-0a-ARk"/>
+                <outlet property="palindromeCheckButton" destination="eZ9-Ne-O3h" id="k4R-du-Buw"/>
+                <outlet property="palindromeTextField" destination="X0K-pN-lMi" id="z9j-xy-1kX"/>
                 <outlet property="view" destination="UmW-hD-OUT" id="iqe-BS-doq"/>
             </connections>
         </placeholder>
@@ -18,18 +28,88 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_user_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="MUY-bx-VQJ">
-                    <rect key="frame" x="87" y="372" width="240" height="128"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_background" translatesAutoresizingMaskIntoConstraints="NO" id="MUY-bx-VQJ">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_photo" translatesAutoresizingMaskIntoConstraints="NO" id="GuF-eZ-OKn">
+                    <rect key="frame" x="149" y="186" width="116" height="116"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="116" id="Tiq-t2-1W3"/>
+                        <constraint firstAttribute="width" constant="116" id="ZFf-do-Xun"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tvU-JI-J7X">
+                    <rect key="frame" x="32" y="360" width="350" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="K2b-RC-vN7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Palindrome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X0K-pN-lMi">
+                    <rect key="frame" x="32" y="422" width="350" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="PJJ-dC-UFw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZ9-Ne-O3h">
+                    <rect key="frame" x="32" y="524" width="350" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="41" id="DUf-Kf-sb8"/>
+                    </constraints>
+                    <color key="tintColor" name="AccentColor"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="CHECK">
+                        <fontDescription key="titleFontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yww-Kq-3K0">
+                    <rect key="frame" x="32" y="580" width="350" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="41" id="dzi-gn-hex"/>
+                    </constraints>
+                    <color key="tintColor" name="AccentColor"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="NEXT">
+                        <fontDescription key="titleFontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                    </buttonConfiguration>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="Ii0-0e-fSk"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="yww-Kq-3K0" firstAttribute="leading" secondItem="Ii0-0e-fSk" secondAttribute="leading" constant="32" id="73f-H1-QPo"/>
+                <constraint firstItem="GuF-eZ-OKn" firstAttribute="top" secondItem="UmW-hD-OUT" secondAttribute="top" constant="186" id="CIx-Sw-5vw"/>
+                <constraint firstItem="Ii0-0e-fSk" firstAttribute="trailing" secondItem="yww-Kq-3K0" secondAttribute="trailing" constant="32" id="ClP-uO-hzt"/>
+                <constraint firstAttribute="bottom" secondItem="MUY-bx-VQJ" secondAttribute="bottom" id="PCL-ET-JFE"/>
+                <constraint firstItem="MUY-bx-VQJ" firstAttribute="leading" secondItem="Ii0-0e-fSk" secondAttribute="leading" id="SzI-or-qNP"/>
+                <constraint firstItem="yww-Kq-3K0" firstAttribute="top" secondItem="eZ9-Ne-O3h" secondAttribute="bottom" constant="15" id="UfY-kE-fmC"/>
+                <constraint firstItem="Ii0-0e-fSk" firstAttribute="trailing" secondItem="eZ9-Ne-O3h" secondAttribute="trailing" constant="32" id="YVQ-Fm-LXq"/>
+                <constraint firstItem="eZ9-Ne-O3h" firstAttribute="leading" secondItem="Ii0-0e-fSk" secondAttribute="leading" constant="32" id="Yne-bg-PrU"/>
+                <constraint firstItem="tvU-JI-J7X" firstAttribute="leading" secondItem="Ii0-0e-fSk" secondAttribute="leading" constant="32" id="Z2Q-BT-D7s"/>
+                <constraint firstItem="MUY-bx-VQJ" firstAttribute="top" secondItem="UmW-hD-OUT" secondAttribute="top" id="ZME-2g-0xu"/>
+                <constraint firstItem="eZ9-Ne-O3h" firstAttribute="top" secondItem="X0K-pN-lMi" secondAttribute="bottom" constant="62" id="aaz-tW-suH"/>
+                <constraint firstItem="Ii0-0e-fSk" firstAttribute="trailing" secondItem="GuF-eZ-OKn" secondAttribute="trailing" constant="149" id="cj4-Pm-z0b"/>
+                <constraint firstItem="X0K-pN-lMi" firstAttribute="top" secondItem="tvU-JI-J7X" secondAttribute="bottom" constant="22" id="epi-fi-KlI"/>
+                <constraint firstItem="Ii0-0e-fSk" firstAttribute="trailing" secondItem="X0K-pN-lMi" secondAttribute="trailing" constant="32" id="exF-5I-41d"/>
+                <constraint firstItem="GuF-eZ-OKn" firstAttribute="leading" secondItem="Ii0-0e-fSk" secondAttribute="leading" constant="149" id="nlU-4U-TJP"/>
+                <constraint firstItem="X0K-pN-lMi" firstAttribute="leading" secondItem="Ii0-0e-fSk" secondAttribute="leading" constant="32" id="qdI-Uh-1s6"/>
+                <constraint firstItem="Ii0-0e-fSk" firstAttribute="trailing" secondItem="tvU-JI-J7X" secondAttribute="trailing" constant="32" id="veZ-4N-8eK"/>
+                <constraint firstItem="tvU-JI-J7X" firstAttribute="top" secondItem="GuF-eZ-OKn" secondAttribute="bottom" constant="58" id="wCX-bj-HGJ"/>
+                <constraint firstItem="MUY-bx-VQJ" firstAttribute="trailing" secondItem="Ii0-0e-fSk" secondAttribute="trailing" id="xfL-40-jH9"/>
+            </constraints>
             <point key="canvasLocation" x="179.71014492753625" y="-4.0178571428571423"/>
         </view>
     </objects>
     <resources>
-        <image name="ic_user_placeholder" width="78" height="78"/>
+        <image name="ic_photo" width="116" height="116"/>
+        <image name="img_background" width="1125" height="2436"/>
+        <namedColor name="AccentColor">
+            <color red="0.16899999976158142" green="0.3880000114440918" blue="0.48199999332427979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
