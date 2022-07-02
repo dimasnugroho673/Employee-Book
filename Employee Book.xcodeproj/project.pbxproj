@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		40F2D6962870C0C200F57DAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F2D6952870C0C200F57DAC /* AppDelegate.swift */; };
 		40F2D6982870C0C200F57DAC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F2D6972870C0C200F57DAC /* SceneDelegate.swift */; };
-		40F2D69A2870C0C200F57DAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F2D6992870C0C200F57DAC /* ViewController.swift */; };
+		40F2D69A2870C0C200F57DAC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F2D6992870C0C200F57DAC /* LoginViewController.swift */; };
 		40F2D69D2870C0C200F57DAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40F2D69B2870C0C200F57DAC /* Main.storyboard */; };
 		40F2D69F2870C0C400F57DAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40F2D69E2870C0C400F57DAC /* Assets.xcassets */; };
 		40F2D6A22870C0C400F57DAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40F2D6A02870C0C400F57DAC /* LaunchScreen.storyboard */; };
+		40F2D6AF2870CA7100F57DAC /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40F2D6AB2870CA7100F57DAC /* Poppins-Regular.ttf */; };
+		40F2D6B02870CA7100F57DAC /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40F2D6AC2870CA7100F57DAC /* Poppins-Bold.ttf */; };
+		40F2D6B12870CA7100F57DAC /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40F2D6AD2870CA7100F57DAC /* Poppins-SemiBold.ttf */; };
+		40F2D6B22870CA7100F57DAC /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40F2D6AE2870CA7100F57DAC /* Poppins-Medium.ttf */; };
+		40F2D6CB2870CE2100F57DAC /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40F2D6CA2870CE2100F57DAC /* LoginViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		40F2D6922870C0C200F57DAC /* Employee Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Employee Book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40F2D6952870C0C200F57DAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40F2D6972870C0C200F57DAC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		40F2D6992870C0C200F57DAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		40F2D6992870C0C200F57DAC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		40F2D69C2870C0C200F57DAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		40F2D69E2870C0C400F57DAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40F2D6A12870C0C400F57DAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40F2D6A32870C0C400F57DAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40F2D6AB2870CA7100F57DAC /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		40F2D6AC2870CA7100F57DAC /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		40F2D6AD2870CA7100F57DAC /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		40F2D6AE2870CA7100F57DAC /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		40F2D6CA2870CE2100F57DAC /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,220 @@
 		40F2D6942870C0C200F57DAC /* Employee Book */ = {
 			isa = PBXGroup;
 			children = (
-				40F2D6952870C0C200F57DAC /* AppDelegate.swift */,
-				40F2D6972870C0C200F57DAC /* SceneDelegate.swift */,
-				40F2D6992870C0C200F57DAC /* ViewController.swift */,
-				40F2D69B2870C0C200F57DAC /* Main.storyboard */,
-				40F2D69E2870C0C400F57DAC /* Assets.xcassets */,
-				40F2D6A02870C0C400F57DAC /* LaunchScreen.storyboard */,
+				40F2D6BA2870CBBB00F57DAC /* Utils */,
+				40F2D6B92870CBAE00F57DAC /* Data */,
+				40F2D6B82870CBA800F57DAC /* Domain */,
+				40F2D6B72870CB8F00F57DAC /* Presentation */,
+				40F2D6B62870CB8600F57DAC /* DI */,
+				40F2D6B32870CA7A00F57DAC /* App */,
+				40F2D6A92870CA3A00F57DAC /* Supporting Files */,
 				40F2D6A32870C0C400F57DAC /* Info.plist */,
 			);
 			path = "Employee Book";
+			sourceTree = "<group>";
+		};
+		40F2D6A92870CA3A00F57DAC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				40F2D6AA2870CA4800F57DAC /* Fonts */,
+				40F2D69E2870C0C400F57DAC /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		40F2D6AA2870CA4800F57DAC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				40F2D6AC2870CA7100F57DAC /* Poppins-Bold.ttf */,
+				40F2D6AD2870CA7100F57DAC /* Poppins-SemiBold.ttf */,
+				40F2D6AE2870CA7100F57DAC /* Poppins-Medium.ttf */,
+				40F2D6AB2870CA7100F57DAC /* Poppins-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		40F2D6B32870CA7A00F57DAC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				40F2D6952870C0C200F57DAC /* AppDelegate.swift */,
+				40F2D6972870C0C200F57DAC /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		40F2D6B42870CAAC00F57DAC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				40F2D6CC2870CF7700F57DAC /* Main */,
+				40F2D6C52870CCC500F57DAC /* Components */,
+				40F2D6C42870CCA500F57DAC /* Login */,
+				40F2D6C62870CCD200F57DAC /* Home */,
+				40F2D6C72870CCD800F57DAC /* User */,
+				40F2D6C92870CCE700F57DAC /* Web */,
+				40F2D6C82870CCE000F57DAC /* Map */,
+				40F2D6B52870CAB500F57DAC /* LaunchScreen */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		40F2D6B52870CAB500F57DAC /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				40F2D6A02870C0C400F57DAC /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		40F2D6B62870CB8600F57DAC /* DI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		40F2D6B72870CB8F00F57DAC /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				40F2D6B42870CAAC00F57DAC /* View */,
+				40F2D6C22870CC7C00F57DAC /* ViewModel */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		40F2D6B82870CBA800F57DAC /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				40F2D6C12870CC7500F57DAC /* Model */,
+				40F2D6C02870CC5A00F57DAC /* Repository */,
+				40F2D6BF2870CC1800F57DAC /* UseCase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		40F2D6B92870CBAE00F57DAC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				40F2D6BC2870CBF400F57DAC /* Repository */,
+				40F2D6BB2870CBE800F57DAC /* DataSource */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		40F2D6BA2870CBBB00F57DAC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		40F2D6BB2870CBE800F57DAC /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				40F2D6BD2870CBFE00F57DAC /* RemoteDataSource */,
+				40F2D6BE2870CC0700F57DAC /* LocalDataSource */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		40F2D6BC2870CBF400F57DAC /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		40F2D6BD2870CBFE00F57DAC /* RemoteDataSource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RemoteDataSource;
+			sourceTree = "<group>";
+		};
+		40F2D6BE2870CC0700F57DAC /* LocalDataSource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LocalDataSource;
+			sourceTree = "<group>";
+		};
+		40F2D6BF2870CC1800F57DAC /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		40F2D6C02870CC5A00F57DAC /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		40F2D6C12870CC7500F57DAC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		40F2D6C22870CC7C00F57DAC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		40F2D6C42870CCA500F57DAC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				40F2D6992870C0C200F57DAC /* LoginViewController.swift */,
+				40F2D6CA2870CE2100F57DAC /* LoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		40F2D6C52870CCC500F57DAC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		40F2D6C62870CCD200F57DAC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		40F2D6C72870CCD800F57DAC /* User */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		40F2D6C82870CCE000F57DAC /* Map */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		40F2D6C92870CCE700F57DAC /* Web */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		40F2D6CC2870CF7700F57DAC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				40F2D69B2870C0C200F57DAC /* Main.storyboard */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +340,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40F2D6CB2870CE2100F57DAC /* LoginViewController.xib in Resources */,
 				40F2D6A22870C0C400F57DAC /* LaunchScreen.storyboard in Resources */,
+				40F2D6B22870CA7100F57DAC /* Poppins-Medium.ttf in Resources */,
 				40F2D69F2870C0C400F57DAC /* Assets.xcassets in Resources */,
+				40F2D6B02870CA7100F57DAC /* Poppins-Bold.ttf in Resources */,
+				40F2D6B12870CA7100F57DAC /* Poppins-SemiBold.ttf in Resources */,
 				40F2D69D2870C0C200F57DAC /* Main.storyboard in Resources */,
+				40F2D6AF2870CA7100F57DAC /* Poppins-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +358,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40F2D69A2870C0C200F57DAC /* ViewController.swift in Sources */,
+				40F2D69A2870C0C200F57DAC /* LoginViewController.swift in Sources */,
 				40F2D6962870C0C200F57DAC /* AppDelegate.swift in Sources */,
 				40F2D6982870C0C200F57DAC /* SceneDelegate.swift in Sources */,
 			);
