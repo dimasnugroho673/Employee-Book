@@ -19,11 +19,17 @@
 		40F2D6B22870CA7100F57DAC /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40F2D6AE2870CA7100F57DAC /* Poppins-Medium.ttf */; };
 		40F2D6CB2870CE2100F57DAC /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40F2D6CA2870CE2100F57DAC /* LoginViewController.xib */; };
 		40F2D6CF2870D39400F57DAC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F2D6CD2870D39400F57DAC /* HomeViewController.swift */; };
-		40F2D6D02870D39400F57DAC /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40F2D6CE2870D39400F57DAC /* HomeViewController.xib */; };
 		40F2D6D32870D86200F57DAC /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F2D6D22870D86200F57DAC /* GlobalHelpers.swift */; };
 		40F2D6D52870D8DA00F57DAC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F2D6D42870D8DA00F57DAC /* Extensions.swift */; };
 		40F2D6D82870DFE400F57DAC /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F2D6D62870DFE400F57DAC /* WebViewController.swift */; };
 		40F2D6D92870DFE400F57DAC /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40F2D6D72870DFE400F57DAC /* WebViewController.xib */; };
+		40F2D6DC2870E15E00F57DAC /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F2D6DA2870E15E00F57DAC /* UserViewController.swift */; };
+		40F2D6DD2870E15E00F57DAC /* UserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40F2D6DB2870E15E00F57DAC /* UserViewController.xib */; };
+		40F2D6E12870E22300F57DAC /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F2D6DF2870E22300F57DAC /* UserCell.swift */; };
+		40F2D6E22870E22300F57DAC /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40F2D6E02870E22300F57DAC /* UserCell.xib */; };
+		40F2D6E42870E40E00F57DAC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F2D6E32870E40E00F57DAC /* User.swift */; };
+		40F2D6E62870E45F00F57DAC /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F2D6E52870E45F00F57DAC /* BaseResponse.swift */; };
+		40F2D6E82870E4C200F57DAC /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40F2D6CE2870D39400F57DAC /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +52,12 @@
 		40F2D6D42870D8DA00F57DAC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		40F2D6D62870DFE400F57DAC /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		40F2D6D72870DFE400F57DAC /* WebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+		40F2D6DA2870E15E00F57DAC /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		40F2D6DB2870E15E00F57DAC /* UserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserViewController.xib; sourceTree = "<group>"; };
+		40F2D6DF2870E22300F57DAC /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		40F2D6E02870E22300F57DAC /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
+		40F2D6E32870E40E00F57DAC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		40F2D6E52870E45F00F57DAC /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +245,8 @@
 		40F2D6C12870CC7500F57DAC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				40F2D6E32870E40E00F57DAC /* User.swift */,
+				40F2D6E52870E45F00F57DAC /* BaseResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -256,6 +270,7 @@
 		40F2D6C52870CCC500F57DAC /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				40F2D6DE2870E20000F57DAC /* UserCell */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -272,6 +287,8 @@
 		40F2D6C72870CCD800F57DAC /* User */ = {
 			isa = PBXGroup;
 			children = (
+				40F2D6DA2870E15E00F57DAC /* UserViewController.swift */,
+				40F2D6DB2870E15E00F57DAC /* UserViewController.xib */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -298,6 +315,15 @@
 				40F2D69B2870C0C200F57DAC /* Main.storyboard */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		40F2D6DE2870E20000F57DAC /* UserCell */ = {
+			isa = PBXGroup;
+			children = (
+				40F2D6DF2870E22300F57DAC /* UserCell.swift */,
+				40F2D6E02870E22300F57DAC /* UserCell.xib */,
+			);
+			path = UserCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,6 +384,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40F2D6DD2870E15E00F57DAC /* UserViewController.xib in Resources */,
 				40F2D6CB2870CE2100F57DAC /* LoginViewController.xib in Resources */,
 				40F2D6A22870C0C400F57DAC /* LaunchScreen.storyboard in Resources */,
 				40F2D6B22870CA7100F57DAC /* Poppins-Medium.ttf in Resources */,
@@ -365,9 +392,10 @@
 				40F2D69F2870C0C400F57DAC /* Assets.xcassets in Resources */,
 				40F2D6B02870CA7100F57DAC /* Poppins-Bold.ttf in Resources */,
 				40F2D6B12870CA7100F57DAC /* Poppins-SemiBold.ttf in Resources */,
+				40F2D6E22870E22300F57DAC /* UserCell.xib in Resources */,
 				40F2D69D2870C0C200F57DAC /* Main.storyboard in Resources */,
 				40F2D6AF2870CA7100F57DAC /* Poppins-Regular.ttf in Resources */,
-				40F2D6D02870D39400F57DAC /* HomeViewController.xib in Resources */,
+				40F2D6E82870E4C200F57DAC /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,11 +407,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				40F2D69A2870C0C200F57DAC /* LoginViewController.swift in Sources */,
+				40F2D6DC2870E15E00F57DAC /* UserViewController.swift in Sources */,
 				40F2D6D52870D8DA00F57DAC /* Extensions.swift in Sources */,
 				40F2D6962870C0C200F57DAC /* AppDelegate.swift in Sources */,
 				40F2D6982870C0C200F57DAC /* SceneDelegate.swift in Sources */,
+				40F2D6E12870E22300F57DAC /* UserCell.swift in Sources */,
 				40F2D6D82870DFE400F57DAC /* WebViewController.swift in Sources */,
 				40F2D6D32870D86200F57DAC /* GlobalHelpers.swift in Sources */,
+				40F2D6E42870E40E00F57DAC /* User.swift in Sources */,
+				40F2D6E62870E45F00F57DAC /* BaseResponse.swift in Sources */,
 				40F2D6CF2870D39400F57DAC /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
