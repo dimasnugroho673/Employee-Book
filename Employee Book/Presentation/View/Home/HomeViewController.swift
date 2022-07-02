@@ -50,12 +50,15 @@ class HomeViewController: UIViewController {
 
     nameLabel.text = name
     emailSelectedLabel.isHidden = true
-    websiteSelectedLabel.isHidden = false
+    websiteSelectedLabel.isHidden = true
   }
 
   // MARK: - Selectors
 
   @objc func handleWebsiteLabelTap() {
-    
+    guard let url = URL(string: "https://suitmedia.com") else { return }
+
+    let vc = WebViewController(url: url)
+    navigationController?.pushViewController(vc, animated: true)
   }
 }
