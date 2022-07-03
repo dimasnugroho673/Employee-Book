@@ -8,9 +8,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserViewController" customModule="Employee_Book" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapViewController" customModule="Employee_Book" customModuleProvider="target">
             <connections>
-                <outlet property="tableView" destination="HJU-5P-VxH" id="PzH-LD-q5g"/>
+                <outlet property="mapView" destination="oVW-Cx-ZC5" id="Vxd-hJ-vNH"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,18 +19,17 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="HJU-5P-VxH">
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="oVW-Cx-ZC5">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                </tableView>
+                </mapView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="HJU-5P-VxH" secondAttribute="bottom" id="0Yn-ag-6Lp"/>
-                <constraint firstItem="HJU-5P-VxH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2Nt-xM-TZm"/>
-                <constraint firstItem="HJU-5P-VxH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gYq-GS-vd1"/>
-                <constraint firstItem="HJU-5P-VxH" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="hdC-Ci-3qB"/>
+                <constraint firstItem="oVW-Cx-ZC5" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="C2F-Wx-Boj"/>
+                <constraint firstAttribute="bottom" secondItem="oVW-Cx-ZC5" secondAttribute="bottom" id="QB0-fV-SQT"/>
+                <constraint firstItem="oVW-Cx-ZC5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="XY0-1m-yjP"/>
+                <constraint firstItem="oVW-Cx-ZC5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="xah-Nn-d5D"/>
             </constraints>
             <point key="canvasLocation" x="131.8840579710145" y="103.79464285714285"/>
         </view>

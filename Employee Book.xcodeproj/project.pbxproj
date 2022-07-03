@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4034019D2870E9C1005F29A0 /* UserRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4034019C2870E9C1005F29A0 /* UserRemoteDataSource.swift */; };
+		403401A12870EA35005F29A0 /* UserRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403401A02870EA35005F29A0 /* UserRepositoryImplementation.swift */; };
+		403401A32870EA54005F29A0 /* UserRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403401A22870EA54005F29A0 /* UserRepositoryProtocol.swift */; };
+		403401A62870EAC8005F29A0 /* UserUserCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403401A52870EAC8005F29A0 /* UserUserCaseProtocol.swift */; };
+		403401A82870EAE8005F29A0 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403401A72870EAE8005F29A0 /* UserService.swift */; };
+		403401AA2870EB1B005F29A0 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403401A92870EB1B005F29A0 /* UserViewModel.swift */; };
+		403401AC2870EB3F005F29A0 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403401AB2870EB3F005F29A0 /* Observable.swift */; };
+		403401AE2870EB6B005F29A0 /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403401AD2870EB6B005F29A0 /* Injection.swift */; };
+		403401B12870EC67005F29A0 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 403401B02870EC67005F29A0 /* SDWebImage */; };
+		403401B42870EC99005F29A0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403401B22870EC99005F29A0 /* MapViewController.swift */; };
+		403401B52870EC99005F29A0 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403401B32870EC99005F29A0 /* MapViewController.xib */; };
+		403401BD2870EF3B005F29A0 /* HalfPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403401BC2870EF3B005F29A0 /* HalfPresentationController.swift */; };
+		403401C62870FC1B005F29A0 /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403401C42870FC1B005F29A0 /* BottomSheetView.swift */; };
+		403401C72870FC1B005F29A0 /* BottomSheetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403401C52870FC1B005F29A0 /* BottomSheetView.xib */; };
 		40F2D6962870C0C200F57DAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F2D6952870C0C200F57DAC /* AppDelegate.swift */; };
 		40F2D6982870C0C200F57DAC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F2D6972870C0C200F57DAC /* SceneDelegate.swift */; };
 		40F2D69A2870C0C200F57DAC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F2D6992870C0C200F57DAC /* LoginViewController.swift */; };
@@ -33,6 +47,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4034019C2870E9C1005F29A0 /* UserRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRemoteDataSource.swift; sourceTree = "<group>"; };
+		403401A02870EA35005F29A0 /* UserRepositoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryImplementation.swift; sourceTree = "<group>"; };
+		403401A22870EA54005F29A0 /* UserRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryProtocol.swift; sourceTree = "<group>"; };
+		403401A52870EAC8005F29A0 /* UserUserCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUserCaseProtocol.swift; sourceTree = "<group>"; };
+		403401A72870EAE8005F29A0 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		403401A92870EB1B005F29A0 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		403401AB2870EB3F005F29A0 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		403401AD2870EB6B005F29A0 /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
+		403401B22870EC99005F29A0 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		403401B32870EC99005F29A0 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		403401BC2870EF3B005F29A0 /* HalfPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfPresentationController.swift; sourceTree = "<group>"; };
+		403401C42870FC1B005F29A0 /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
+		403401C52870FC1B005F29A0 /* BottomSheetView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomSheetView.xib; sourceTree = "<group>"; };
 		40F2D6922870C0C200F57DAC /* Employee Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Employee Book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40F2D6952870C0C200F57DAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40F2D6972870C0C200F57DAC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,12 +92,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				403401B12870EC67005F29A0 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		403401A42870EA98005F29A0 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				403401A72870EAE8005F29A0 /* UserService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		403401BB2870EF13005F29A0 /* HalfBottomSheet */ = {
+			isa = PBXGroup;
+			children = (
+				403401BC2870EF3B005F29A0 /* HalfPresentationController.swift */,
+			);
+			path = HalfBottomSheet;
+			sourceTree = "<group>";
+		};
+		403401C32870FC07005F29A0 /* BottomSheetView */ = {
+			isa = PBXGroup;
+			children = (
+				403401C42870FC1B005F29A0 /* BottomSheetView.swift */,
+				403401C52870FC1B005F29A0 /* BottomSheetView.xib */,
+			);
+			path = BottomSheetView;
+			sourceTree = "<group>";
+		};
 		40F2D6892870C0C200F57DAC = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +210,7 @@
 		40F2D6B62870CB8600F57DAC /* DI */ = {
 			isa = PBXGroup;
 			children = (
+				403401AD2870EB6B005F29A0 /* Injection.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -173,9 +227,10 @@
 		40F2D6B82870CBA800F57DAC /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				403401A42870EA98005F29A0 /* Service */,
 				40F2D6C12870CC7500F57DAC /* Model */,
-				40F2D6C02870CC5A00F57DAC /* Repository */,
-				40F2D6BF2870CC1800F57DAC /* UseCase */,
+				40F2D6C02870CC5A00F57DAC /* RepositoryProtocol */,
+				40F2D6BF2870CC1800F57DAC /* UseCaseProtocol */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -194,6 +249,7 @@
 			children = (
 				40F2D6D22870D86200F57DAC /* GlobalHelpers.swift */,
 				40F2D6D42870D8DA00F57DAC /* Extensions.swift */,
+				403401AB2870EB3F005F29A0 /* Observable.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -210,6 +266,7 @@
 		40F2D6BC2870CBF400F57DAC /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				403401A02870EA35005F29A0 /* UserRepositoryImplementation.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -217,6 +274,7 @@
 		40F2D6BD2870CBFE00F57DAC /* RemoteDataSource */ = {
 			isa = PBXGroup;
 			children = (
+				4034019C2870E9C1005F29A0 /* UserRemoteDataSource.swift */,
 			);
 			path = RemoteDataSource;
 			sourceTree = "<group>";
@@ -228,18 +286,20 @@
 			path = LocalDataSource;
 			sourceTree = "<group>";
 		};
-		40F2D6BF2870CC1800F57DAC /* UseCase */ = {
+		40F2D6BF2870CC1800F57DAC /* UseCaseProtocol */ = {
 			isa = PBXGroup;
 			children = (
+				403401A52870EAC8005F29A0 /* UserUserCaseProtocol.swift */,
 			);
-			path = UseCase;
+			path = UseCaseProtocol;
 			sourceTree = "<group>";
 		};
-		40F2D6C02870CC5A00F57DAC /* Repository */ = {
+		40F2D6C02870CC5A00F57DAC /* RepositoryProtocol */ = {
 			isa = PBXGroup;
 			children = (
+				403401A22870EA54005F29A0 /* UserRepositoryProtocol.swift */,
 			);
-			path = Repository;
+			path = RepositoryProtocol;
 			sourceTree = "<group>";
 		};
 		40F2D6C12870CC7500F57DAC /* Model */ = {
@@ -254,6 +314,7 @@
 		40F2D6C22870CC7C00F57DAC /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				403401A92870EB1B005F29A0 /* UserViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -270,6 +331,8 @@
 		40F2D6C52870CCC500F57DAC /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				403401C32870FC07005F29A0 /* BottomSheetView */,
+				403401BB2870EF13005F29A0 /* HalfBottomSheet */,
 				40F2D6DE2870E20000F57DAC /* UserCell */,
 			);
 			path = Components;
@@ -296,6 +359,8 @@
 		40F2D6C82870CCE000F57DAC /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				403401B22870EC99005F29A0 /* MapViewController.swift */,
+				403401B32870EC99005F29A0 /* MapViewController.xib */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -342,6 +407,9 @@
 			dependencies = (
 			);
 			name = "Employee Book";
+			packageProductDependencies = (
+				403401B02870EC67005F29A0 /* SDWebImage */,
+			);
 			productName = "Employee Book";
 			productReference = 40F2D6922870C0C200F57DAC /* Employee Book.app */;
 			productType = "com.apple.product-type.application";
@@ -370,6 +438,9 @@
 				Base,
 			);
 			mainGroup = 40F2D6892870C0C200F57DAC;
+			packageReferences = (
+				403401AF2870EC67005F29A0 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 40F2D6932870C0C200F57DAC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -385,6 +456,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40F2D6DD2870E15E00F57DAC /* UserViewController.xib in Resources */,
+				403401B52870EC99005F29A0 /* MapViewController.xib in Resources */,
 				40F2D6CB2870CE2100F57DAC /* LoginViewController.xib in Resources */,
 				40F2D6A22870C0C400F57DAC /* LaunchScreen.storyboard in Resources */,
 				40F2D6B22870CA7100F57DAC /* Poppins-Medium.ttf in Resources */,
@@ -392,6 +464,7 @@
 				40F2D69F2870C0C400F57DAC /* Assets.xcassets in Resources */,
 				40F2D6B02870CA7100F57DAC /* Poppins-Bold.ttf in Resources */,
 				40F2D6B12870CA7100F57DAC /* Poppins-SemiBold.ttf in Resources */,
+				403401C72870FC1B005F29A0 /* BottomSheetView.xib in Resources */,
 				40F2D6E22870E22300F57DAC /* UserCell.xib in Resources */,
 				40F2D69D2870C0C200F57DAC /* Main.storyboard in Resources */,
 				40F2D6AF2870CA7100F57DAC /* Poppins-Regular.ttf in Resources */,
@@ -406,17 +479,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				403401A32870EA54005F29A0 /* UserRepositoryProtocol.swift in Sources */,
 				40F2D69A2870C0C200F57DAC /* LoginViewController.swift in Sources */,
 				40F2D6DC2870E15E00F57DAC /* UserViewController.swift in Sources */,
+				403401B42870EC99005F29A0 /* MapViewController.swift in Sources */,
 				40F2D6D52870D8DA00F57DAC /* Extensions.swift in Sources */,
+				403401AC2870EB3F005F29A0 /* Observable.swift in Sources */,
+				4034019D2870E9C1005F29A0 /* UserRemoteDataSource.swift in Sources */,
 				40F2D6962870C0C200F57DAC /* AppDelegate.swift in Sources */,
 				40F2D6982870C0C200F57DAC /* SceneDelegate.swift in Sources */,
+				403401A62870EAC8005F29A0 /* UserUserCaseProtocol.swift in Sources */,
 				40F2D6E12870E22300F57DAC /* UserCell.swift in Sources */,
+				403401BD2870EF3B005F29A0 /* HalfPresentationController.swift in Sources */,
+				403401A12870EA35005F29A0 /* UserRepositoryImplementation.swift in Sources */,
 				40F2D6D82870DFE400F57DAC /* WebViewController.swift in Sources */,
 				40F2D6D32870D86200F57DAC /* GlobalHelpers.swift in Sources */,
+				403401A82870EAE8005F29A0 /* UserService.swift in Sources */,
 				40F2D6E42870E40E00F57DAC /* User.swift in Sources */,
+				403401AA2870EB1B005F29A0 /* UserViewModel.swift in Sources */,
 				40F2D6E62870E45F00F57DAC /* BaseResponse.swift in Sources */,
+				403401C62870FC1B005F29A0 /* BottomSheetView.swift in Sources */,
 				40F2D6CF2870D39400F57DAC /* HomeViewController.swift in Sources */,
+				403401AE2870EB6B005F29A0 /* Injection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -634,6 +718,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		403401AF2870EC67005F29A0 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		403401B02870EC67005F29A0 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 403401AF2870EC67005F29A0 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 40F2D68A2870C0C200F57DAC /* Project object */;
 }

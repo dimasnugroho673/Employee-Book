@@ -22,3 +22,14 @@ extension UIViewController {
     navigationItem.backButtonTitle = ""
   }
 }
+
+extension UINavigationController {
+  func backToViewController(vc: Any) {
+    for element in viewControllers as Array {
+      if "\(type(of: element)).Type" == "\(type(of: vc))" {
+        self.popToViewController(element, animated: true)
+        break
+      }
+    }
+  }
+}

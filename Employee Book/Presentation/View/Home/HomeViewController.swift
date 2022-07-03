@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class HomeViewController: UIViewController {
 
@@ -13,6 +14,7 @@ class HomeViewController: UIViewController {
 
   var name: String
 
+  @IBOutlet var profileImage: UIImageView!
   @IBOutlet var nameLabel: UILabel!
   @IBOutlet var nameSelectedLabel: UILabel!
   @IBOutlet var emailSelectedLabel: UILabel!
@@ -37,6 +39,13 @@ class HomeViewController: UIViewController {
     configureUI()
   }
 
+  override func viewDidLayoutSubviews() {
+    profileImage.layer.masksToBounds = true
+    profileImage.clipsToBounds = true
+    profileImage.layer.cornerRadius =  profileImage.frame.height / 2
+    profileImage.contentMode = .scaleAspectFill
+  }
+
   // MARK: - Helpers
 
   private func configureUI() {
@@ -51,14 +60,49 @@ class HomeViewController: UIViewController {
     nameLabel.text = name
     emailSelectedLabel.isHidden = true
     websiteSelectedLabel.isHidden = true
+
+    chooseUserButton.addTarget(self, action: #selector(handleSelectUserTap), for: .touchUpInside)
   }
 
   // MARK: - Selectors
+
+  @objc func handleSelectUserTap() {
+    let vc = UserViewController()
+    vc.delegate = self
+    vc.mapDelegate = self
+    navigationController?.pushViewController(vc, animated: true)
+  }
 
   @objc func handleWebsiteLabelTap() {
     guard let url = URL(string: "https://suitmedia.com") else { return }
 
     let vc = WebViewController(url: url)
     navigationController?.pushViewController(vc, animated: true)
+  }
+}
+
+extension HomeViewController: UserViewDelegate {
+  func getUser(user: User) {
+    print("DEBUG: Delegate called")
+
+    emailSelectedLabel.isHidden = false
+    websiteSelectedLabel.isHidden = false
+
+    self.nameSelectedLabel.text = "\(user.lastName) \(user.lastName)"
+    self.nameSelectedLabel.textColor = UIColor(named: "color_dark_grey")
+    self.profileImage.sd_setImage(with: URL(string: user.avatar))
+    self.emailSelectedLabel.text = user.email
+  }
+}
+
+extension HomeViewController: MapViewDelegate {
+  func popToHomeWithUser(user: User) {
+    emailSelectedLabel.isHidden = false
+    websiteSelectedLabel.isHidden = false
+
+    self.nameSelectedLabel.text = "\(user.lastName) \(user.lastName)"
+    self.nameSelectedLabel.textColor = UIColor(named: "color_dark_grey")
+    self.profileImage.sd_setImage(with: URL(string: user.avatar))
+    self.emailSelectedLabel.text = user.email
   }
 }

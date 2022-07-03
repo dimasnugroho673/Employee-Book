@@ -55,6 +55,11 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="emailLabel" destination="CT2-so-0fS" id="KLF-WK-7Zf"/>
+                <outlet property="nameLabel" destination="Aru-26-cUY" id="EV7-Fh-LlB"/>
+                <outlet property="profileImage" destination="jAU-Rg-zfN" id="lY9-dR-MXm"/>
+            </connections>
             <point key="canvasLocation" x="207.24637681159422" y="108.48214285714285"/>
         </tableViewCell>
     </objects>
