@@ -56,6 +56,10 @@ class LoginViewController: UIViewController {
   private func configureUI() {
     navigationItem.backButtonTitle = ""
 
+    nameTextField.autocorrectionType = .no
+    palindromeTextField.autocorrectionType = .no
+    palindromeTextField.autocapitalizationType = .none
+
     nextButton.addTarget(self, action: #selector(handleNextButtonTap), for: .touchUpInside)
     palindromeCheckButton.addTarget(self, action: #selector(handlePalindromeCheckTap), for: .touchUpInside)
   }
