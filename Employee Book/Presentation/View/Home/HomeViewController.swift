@@ -13,6 +13,7 @@ class HomeViewController: UIViewController {
   // MARK: - Properties
 
   var name: String
+  var userWebsite: URL?
 
   @IBOutlet var profileImage: UIImageView!
   @IBOutlet var nameLabel: UILabel!
@@ -77,7 +78,7 @@ class HomeViewController: UIViewController {
   }
 
   @objc func handleWebsiteLabelTap() {
-    guard let url = URL(string: "https://suitmedia.com") else { return }
+    guard let url = self.userWebsite else { return }
 
     let vc = WebViewController(url: url)
     navigationController?.pushViewController(vc, animated: true)
@@ -95,6 +96,7 @@ extension HomeViewController: UserViewDelegate {
     self.nameSelectedLabel.textColor = UIColor(named: "color_dark_grey")
     self.profileImage.sd_setImage(with: URL(string: user.avatar))
     self.emailSelectedLabel.text = user.email
+    self.userWebsite = URL(string: user.website ?? "")
   }
 }
 
@@ -107,5 +109,6 @@ extension HomeViewController: MapViewDelegate {
     self.nameSelectedLabel.textColor = UIColor(named: "color_dark_grey")
     self.profileImage.sd_setImage(with: URL(string: user.avatar))
     self.emailSelectedLabel.text = user.email
+    self.userWebsite = URL(string: user.website ?? "")
   }
 }
