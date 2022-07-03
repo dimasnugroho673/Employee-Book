@@ -61,6 +61,10 @@ class HomeViewController: UIViewController {
     websiteSelectedLabel.addGestureRecognizer(tapGesture)
     websiteSelectedLabel.isUserInteractionEnabled = true
 
+    let underline = [NSAttributedString.Key.underlineStyle: NSUnderlineStyle.thick.rawValue]
+    let underlineAttributeString = NSAttributedString(string: websiteSelectedLabel.text  ?? "", attributes: underline)
+    websiteSelectedLabel.attributedText = underlineAttributeString
+
     nameLabel.text = name
     emailSelectedLabel.isHidden = true
     websiteSelectedLabel.isHidden = true
