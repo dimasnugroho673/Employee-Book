@@ -42,6 +42,10 @@ class LoginViewController: UIViewController {
     navigationController?.pushViewController(nextVC, animated: true)
   }
 
+  @objc func handlePalindromeCheckTap() {
+    Utilities.showDialog(view: self, title: "Failed", message: "Not Palindrome")
+  }
+
   // MARK: - Service
 
   // MARK: - Helpers
@@ -50,6 +54,9 @@ class LoginViewController: UIViewController {
     navigationItem.backButtonTitle = ""
 
     nextButton.addTarget(self, action: #selector(handleNextButtonTap), for: .touchUpInside)
+    palindromeCheckButton.addTarget(self, action: #selector(handlePalindromeCheckTap), for: .touchUpInside)
   }
+
+
 }
 
