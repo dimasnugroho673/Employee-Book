@@ -8,7 +8,10 @@
 class PalindromeService: PalindromeUseCaseProtocol {
   func check(_ string: String) -> Bool {
 
-    let string = Array(string)
+    var oldString = string.lowercased()
+    oldString = oldString.replacingOccurrences(of: " ", with: "")
+
+    let string = Array(oldString)
 
     for (index, word) in string.enumerated() {
       if word != string[string.count - index - 1] {

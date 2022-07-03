@@ -10,7 +10,7 @@ import XCTest
 
 class Employee_BookTests: XCTestCase {
 
-  func palindromeChecker() throws {
+  func testPalindromeChecker() throws {
     let palindromeService = PalindromeService()
 
     XCTAssertTrue(palindromeService.check("kasur rusak"))
