@@ -44,6 +44,9 @@ class HomeViewController: UIViewController {
     profileImage.clipsToBounds = true
     profileImage.layer.cornerRadius =  profileImage.frame.height / 2
     profileImage.contentMode = .scaleAspectFill
+
+    chooseUserButton.layer.cornerRadius = 12
+    chooseUserButton.clipsToBounds = true
   }
 
   // MARK: - Helpers

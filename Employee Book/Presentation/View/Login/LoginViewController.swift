@@ -25,6 +25,14 @@ class LoginViewController: UIViewController {
     configureUI()
   }
 
+  override func viewDidLayoutSubviews() {
+    palindromeCheckButton.layer.cornerRadius = 12
+    palindromeCheckButton.clipsToBounds = true
+
+    nextButton.layer.cornerRadius = 12
+    nextButton.clipsToBounds = true
+  }
+
   // MARK: - Selectors
 
   @objc func handleNextButtonTap() {

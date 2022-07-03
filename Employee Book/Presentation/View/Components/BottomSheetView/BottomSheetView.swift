@@ -24,23 +24,33 @@ class BottomSheetView: UIViewController {
 
   var user: User
 
-    weak var delegate: BottomSheetDelegate?
+  weak var delegate: BottomSheetDelegate?
 
-    init(user: User) {
-      self.user = user
+  init(user: User) {
+    self.user = user
 
-      super.init(nibName: nil, bundle: nil)
-    }
+    super.init(nibName: nil, bundle: nil)
+  }
 
-    required init?(coder: NSCoder) {
-      fatalError("init(coder:) has not been implemented")
-    }
+  required init?(coder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
+  }
 
-    override func viewDidLoad() {
-      super.viewDidLoad()
+  override func viewDidLoad() {
+    super.viewDidLoad()
 
-      configureUI()
-    }
+    configureUI()
+  }
+
+  override func viewDidLayoutSubviews() {
+    profileUserSelectedImage.layer.masksToBounds = true
+    profileUserSelectedImage.clipsToBounds = true
+    profileUserSelectedImage.layer.cornerRadius =  profileUserSelectedImage.frame.height / 2
+    profileUserSelectedImage.contentMode = .scaleAspectFill
+
+    selectUserSelectedButton.layer.cornerRadius = 12
+    selectUserSelectedButton.clipsToBounds = true
+  }
 
   private func configureUI() {
     view.frame = CGRect(x: 0, y: 0, width: view.frame.size.width, height: 335)
@@ -51,21 +61,15 @@ class BottomSheetView: UIViewController {
     view.layer.cornerRadius = 16
     view.layer.maskedCorners = [CACornerMask.layerMinXMinYCorner, CACornerMask.layerMaxXMinYCorner]
 
-    profileUserSelectedImage.layer.cornerRadius = 84 / 2
-    profileUserSelectedImage.contentMode = .scaleAspectFill
-    profileUserSelectedImage.clipsToBounds = true
-    profileUserSelectedImage.backgroundColor = .systemBlue
-
-//    profileUserSelectedImage.sd_setImage(with: URL(string: user.avatar))
+    profileUserSelectedImage.sd_setImage(with: URL(string: user.avatar))
     nameUserSelectedImage.text = "\(user.firstName) \(user.lastName)"
 
     selectUserSelectedButton.addTarget(self, action: #selector(handleSelectUserTap), for: .touchUpInside)
-
   }
 
-    @objc func handleSelectUserTap() {
-      dismiss(animated: true)
-      delegate?.dismissAndGetUser(user: user)
-    }
+  @objc func handleSelectUserTap() {
+    dismiss(animated: true)
+    delegate?.dismissAndGetUser(user: user)
+  }
 
 }
