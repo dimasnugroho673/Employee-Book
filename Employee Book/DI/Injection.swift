@@ -12,4 +12,8 @@ class Injection {
 
     return UserService(userRepository: repo)
   }
+
+  func provideLogin() -> PalindromeService {
+    return PalindromeService()
+  }
 }

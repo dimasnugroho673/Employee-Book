@@ -11,6 +11,8 @@ class LoginViewController: UIViewController {
 
   // MARK: - Properties
 
+  private let loginViewModel: LoginViewModel = LoginViewModel(palindromeService: Injection().provideLogin())
+
   @IBOutlet var nameTextField: UITextField!
   @IBOutlet var palindromeTextField: UITextField!
   @IBOutlet var palindromeCheckButton: UIButton!
@@ -23,6 +25,7 @@ class LoginViewController: UIViewController {
 
 
     configureUI()
+    configureBinding()
   }
 
   override func viewDidLayoutSubviews() {
@@ -43,7 +46,9 @@ class LoginViewController: UIViewController {
   }
 
   @objc func handlePalindromeCheckTap() {
-    Utilities.showDialog(view: self, title: "Failed", message: "Not Palindrome")
+    guard let rawPalindromeString = palindromeTextField.text else { return }
+
+    loginViewModel.checkPalindrome(rawPalindromeString)
   }
 
   // MARK: - Service
@@ -57,6 +62,13 @@ class LoginViewController: UIViewController {
     palindromeCheckButton.addTarget(self, action: #selector(handlePalindromeCheckTap), for: .touchUpInside)
   }
 
+  private func configureBinding() {
+    loginViewModel.palindromeMessage.bind { message in
+      if !message.isEmpty {
+        Utilities.showDialog(view: self, title: "Palindrome result", message: message)
+      }
+    }
+  }
 
 }
 

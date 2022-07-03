@@ -22,6 +22,9 @@
 		403401C62870FC1B005F29A0 /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403401C42870FC1B005F29A0 /* BottomSheetView.swift */; };
 		403401C72870FC1B005F29A0 /* BottomSheetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403401C52870FC1B005F29A0 /* BottomSheetView.xib */; };
 		405F4A6E2871E34500E80857 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405F4A6D2871E34500E80857 /* Utilities.swift */; };
+		405F4A702871E53E00E80857 /* PalindromeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405F4A6F2871E53E00E80857 /* PalindromeService.swift */; };
+		405F4A722871E55800E80857 /* PalindromeUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405F4A712871E55800E80857 /* PalindromeUseCaseProtocol.swift */; };
+		405F4A742871E67400E80857 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405F4A732871E67400E80857 /* LoginViewModel.swift */; };
 		40F2D6962870C0C200F57DAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F2D6952870C0C200F57DAC /* AppDelegate.swift */; };
 		40F2D6982870C0C200F57DAC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F2D6972870C0C200F57DAC /* SceneDelegate.swift */; };
 		40F2D69A2870C0C200F57DAC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F2D6992870C0C200F57DAC /* LoginViewController.swift */; };
@@ -62,6 +65,9 @@
 		403401C42870FC1B005F29A0 /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
 		403401C52870FC1B005F29A0 /* BottomSheetView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomSheetView.xib; sourceTree = "<group>"; };
 		405F4A6D2871E34500E80857 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		405F4A6F2871E53E00E80857 /* PalindromeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeService.swift; sourceTree = "<group>"; };
+		405F4A712871E55800E80857 /* PalindromeUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeUseCaseProtocol.swift; sourceTree = "<group>"; };
+		405F4A732871E67400E80857 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		40F2D6922870C0C200F57DAC /* Employee Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Employee Book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40F2D6952870C0C200F57DAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40F2D6972870C0C200F57DAC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				403401A72870EAE8005F29A0 /* UserService.swift */,
+				405F4A6F2871E53E00E80857 /* PalindromeService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -293,6 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				403401A52870EAC8005F29A0 /* UserUserCaseProtocol.swift */,
+				405F4A712871E55800E80857 /* PalindromeUseCaseProtocol.swift */,
 			);
 			path = UseCaseProtocol;
 			sourceTree = "<group>";
@@ -318,6 +326,7 @@
 			isa = PBXGroup;
 			children = (
 				403401A92870EB1B005F29A0 /* UserViewModel.swift */,
+				405F4A732871E67400E80857 /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -488,9 +497,12 @@
 				403401B42870EC99005F29A0 /* MapViewController.swift in Sources */,
 				40F2D6D52870D8DA00F57DAC /* Extensions.swift in Sources */,
 				403401AC2870EB3F005F29A0 /* Observable.swift in Sources */,
+				405F4A702871E53E00E80857 /* PalindromeService.swift in Sources */,
 				4034019D2870E9C1005F29A0 /* UserRemoteDataSource.swift in Sources */,
+				405F4A742871E67400E80857 /* LoginViewModel.swift in Sources */,
 				40F2D6962870C0C200F57DAC /* AppDelegate.swift in Sources */,
 				40F2D6982870C0C200F57DAC /* SceneDelegate.swift in Sources */,
+				405F4A722871E55800E80857 /* PalindromeUseCaseProtocol.swift in Sources */,
 				403401A62870EAC8005F29A0 /* UserUserCaseProtocol.swift in Sources */,
 				40F2D6E12870E22300F57DAC /* UserCell.swift in Sources */,
 				403401BD2870EF3B005F29A0 /* HalfPresentationController.swift in Sources */,
