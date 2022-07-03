@@ -23,7 +23,6 @@ class UserViewModel {
 
     if (isFirstTime || (users.value.count < totalDataFromAPI)) {
       userService.fetchUsers(page: page) { response in
-        print("DEBUG: CALLING API....")
         self.isFirstTime = false
         self.totalDataFromAPI = response.total
 

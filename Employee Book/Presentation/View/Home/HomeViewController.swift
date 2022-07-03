@@ -89,10 +89,10 @@ class HomeViewController: UIViewController {
   }
 }
 
-extension HomeViewController: UserViewDelegate {
-  func getUser(user: User) {
-    print("DEBUG: Delegate called")
+// MARK: - HomeViewController: UserViewDelegate
 
+extension HomeViewController: UserViewDelegate {
+  func popToHomeAndWithUser(user: User) {
     emailSelectedLabel.isHidden = false
     websiteSelectedLabel.isHidden = false
 
@@ -103,6 +103,8 @@ extension HomeViewController: UserViewDelegate {
     self.userWebsite = URL(string: user.website ?? "")
   }
 }
+
+// MARK: - HomeViewController: MapViewDelegate
 
 extension HomeViewController: MapViewDelegate {
   func popToHomeWithUser(user: User) {

@@ -33,3 +33,16 @@ extension UINavigationController {
     }
   }
 }
+
+extension UserViewController {
+  func createSpinner() -> UIView {
+    let footerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: 100))
+    let spinner = UIActivityIndicatorView(style: .medium)
+    spinner.center = footerView.center
+
+    footerView.addSubview(spinner)
+    spinner.startAnimating()
+
+    return footerView
+  }
+}

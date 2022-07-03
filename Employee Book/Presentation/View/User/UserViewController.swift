@@ -8,11 +8,15 @@
 import UIKit
 import SDWebImage
 
+// MARK: - UserViewDelegate
+
 protocol UserViewDelegate: AnyObject {
-  func getUser(user: User)
+  func popToHomeAndWithUser(user: User)
 }
 
 class UserViewController: UIViewController {
+
+  // MARK: - Properties
 
   let userViewModel: UserViewModel = UserViewModel(userService: Injection().provideUser())
 
@@ -23,6 +27,8 @@ class UserViewController: UIViewController {
 
   weak var delegate: UserViewDelegate?
   weak var mapDelegate: MapViewDelegate?
+
+  // MARK: - Lifecycle
 
   init() {
     self.mapView = MapViewController(users: [])
@@ -49,11 +55,15 @@ class UserViewController: UIViewController {
     configureUI()
   }
 
+  // MARK: - Services
+
   func fetchData(page: Int) {
     userViewModel.getUser(page: page)
   }
 
-  func configureBinding() {
+  // MARK: - Helpers
+
+  private func configureBinding() {
     userViewModel.users.bind { users in
       print("DEBUG: Total data: \(self.userViewModel.users.value.count)")
       DispatchQueue.main.async {
@@ -72,7 +82,7 @@ class UserViewController: UIViewController {
     }
   }
 
-  func configureUI() {
+  private func configureUI() {
     title = "Users"
 
     configureNavigationBar()
@@ -80,6 +90,8 @@ class UserViewController: UIViewController {
     let rigthBarButton = UIBarButtonItem(image: UIImage(systemName: "map.fill"), style: .plain, target: self, action: #selector(changeViewToMap))
     navigationItem.rightBarButtonItem = rigthBarButton
   }
+
+  // MARK: - Selectors
 
   @objc func handlePullToRefresh() {
     self.page = 1
@@ -108,10 +120,12 @@ class UserViewController: UIViewController {
   }
 }
 
+// MARK: - UserViewController: UITableViewDelegate
+
 extension UserViewController: UITableViewDelegate {
 
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    delegate?.getUser(user: userViewModel.users.value[indexPath.row])
+    delegate?.popToHomeAndWithUser(user: userViewModel.users.value[indexPath.row])
     navigationController?.popViewController(animated: true)
   }
 
@@ -125,6 +139,8 @@ extension UserViewController: UITableViewDelegate {
     }
   }
 }
+
+// MARK: - UserViewController: UITableViewDataSource
 
 extension UserViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -143,22 +159,10 @@ extension UserViewController: UITableViewDataSource {
   }
 }
 
-extension UserViewController {
-  func createSpinner() -> UIView {
-    let footerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: 100))
-    let spinner = UIActivityIndicatorView(style: .medium)
-    spinner.center = footerView.center
-
-    footerView.addSubview(spinner)
-    spinner.startAnimating()
-
-    return footerView
-  }
-}
+// MARK: - UserViewController: MapViewDelegate
 
 extension UserViewController: MapViewDelegate {
   func popToHomeWithUser(user: User) {
-//    print("DEBUG: Get user data \(user)")
     navigationController?.popViewController(animated: true)
     mapDelegate?.popToHomeWithUser(user: user)
   }

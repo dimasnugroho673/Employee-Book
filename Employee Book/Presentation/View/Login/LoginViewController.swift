@@ -50,9 +50,7 @@ class LoginViewController: UIViewController {
 
     loginViewModel.checkPalindrome(rawPalindromeString)
   }
-
-  // MARK: - Service
-
+  
   // MARK: - Helpers
 
   private func configureUI() {

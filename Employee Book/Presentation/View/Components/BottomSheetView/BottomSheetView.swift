@@ -8,15 +8,21 @@
 import UIKit
 import SDWebImage
 
+// MARK: - BottomSheetDelegate
+
 protocol BottomSheetDelegate: AnyObject {
   func dismissAndGetUser(user: User)
 }
+
+// MARK: - @objc BottomSheeWillDismisstDelegate
 
 @objc protocol BottomSheeWillDismisstDelegate: AnyObject {
   func deselectAnnotation()
 }
 
 class BottomSheetView: UIViewController {
+
+  // MARK: - Properties
 
   @IBOutlet var profileUserSelectedImage: UIImageView!
   @IBOutlet var nameUserSelectedImage: UILabel!
@@ -25,6 +31,8 @@ class BottomSheetView: UIViewController {
   var user: User
 
   weak var delegate: BottomSheetDelegate?
+
+  // MARK: - Lifecycle
 
   init(user: User) {
     self.user = user
@@ -52,6 +60,8 @@ class BottomSheetView: UIViewController {
     selectUserSelectedButton.clipsToBounds = true
   }
 
+  // MARK: - Helpers
+
   private func configureUI() {
     view.frame = CGRect(x: 0, y: 0, width: view.frame.size.width, height: 335)
     view.layer.shadowColor = UIColor.black.cgColor
@@ -66,6 +76,8 @@ class BottomSheetView: UIViewController {
 
     selectUserSelectedButton.addTarget(self, action: #selector(handleSelectUserTap), for: .touchUpInside)
   }
+
+  // MARK: - Selectors
 
   @objc func handleSelectUserTap() {
     dismiss(animated: true)
