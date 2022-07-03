@@ -25,6 +25,7 @@
 		405F4A702871E53E00E80857 /* PalindromeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405F4A6F2871E53E00E80857 /* PalindromeService.swift */; };
 		405F4A722871E55800E80857 /* PalindromeUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405F4A712871E55800E80857 /* PalindromeUseCaseProtocol.swift */; };
 		405F4A742871E67400E80857 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405F4A732871E67400E80857 /* LoginViewModel.swift */; };
+		405F4A7C2871F5D200E80857 /* Employee_BookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405F4A7B2871F5D200E80857 /* Employee_BookTests.swift */; };
 		40F2D6962870C0C200F57DAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F2D6952870C0C200F57DAC /* AppDelegate.swift */; };
 		40F2D6982870C0C200F57DAC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F2D6972870C0C200F57DAC /* SceneDelegate.swift */; };
 		40F2D69A2870C0C200F57DAC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F2D6992870C0C200F57DAC /* LoginViewController.swift */; };
@@ -37,7 +38,6 @@
 		40F2D6B22870CA7100F57DAC /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40F2D6AE2870CA7100F57DAC /* Poppins-Medium.ttf */; };
 		40F2D6CB2870CE2100F57DAC /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40F2D6CA2870CE2100F57DAC /* LoginViewController.xib */; };
 		40F2D6CF2870D39400F57DAC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F2D6CD2870D39400F57DAC /* HomeViewController.swift */; };
-		40F2D6D32870D86200F57DAC /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F2D6D22870D86200F57DAC /* GlobalHelpers.swift */; };
 		40F2D6D52870D8DA00F57DAC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F2D6D42870D8DA00F57DAC /* Extensions.swift */; };
 		40F2D6D82870DFE400F57DAC /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F2D6D62870DFE400F57DAC /* WebViewController.swift */; };
 		40F2D6D92870DFE400F57DAC /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40F2D6D72870DFE400F57DAC /* WebViewController.xib */; };
@@ -49,6 +49,16 @@
 		40F2D6E62870E45F00F57DAC /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F2D6E52870E45F00F57DAC /* BaseResponse.swift */; };
 		40F2D6E82870E4C200F57DAC /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40F2D6CE2870D39400F57DAC /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		405F4A7D2871F5D200E80857 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40F2D68A2870C0C200F57DAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40F2D6912870C0C200F57DAC;
+			remoteInfo = "Employee Book";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4034019C2870E9C1005F29A0 /* UserRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRemoteDataSource.swift; sourceTree = "<group>"; };
@@ -68,6 +78,8 @@
 		405F4A6F2871E53E00E80857 /* PalindromeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeService.swift; sourceTree = "<group>"; };
 		405F4A712871E55800E80857 /* PalindromeUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeUseCaseProtocol.swift; sourceTree = "<group>"; };
 		405F4A732871E67400E80857 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		405F4A792871F5D200E80857 /* Employee BookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Employee BookTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		405F4A7B2871F5D200E80857 /* Employee_BookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee_BookTests.swift; sourceTree = "<group>"; };
 		40F2D6922870C0C200F57DAC /* Employee Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Employee Book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40F2D6952870C0C200F57DAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40F2D6972870C0C200F57DAC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,7 +95,6 @@
 		40F2D6CA2870CE2100F57DAC /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		40F2D6CD2870D39400F57DAC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		40F2D6CE2870D39400F57DAC /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		40F2D6D22870D86200F57DAC /* GlobalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelpers.swift; sourceTree = "<group>"; };
 		40F2D6D42870D8DA00F57DAC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		40F2D6D62870DFE400F57DAC /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		40F2D6D72870DFE400F57DAC /* WebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
@@ -96,6 +107,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		405F4A762871F5D200E80857 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		40F2D68F2870C0C200F57DAC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -133,10 +151,19 @@
 			path = BottomSheetView;
 			sourceTree = "<group>";
 		};
+		405F4A7A2871F5D200E80857 /* Employee BookTests */ = {
+			isa = PBXGroup;
+			children = (
+				405F4A7B2871F5D200E80857 /* Employee_BookTests.swift */,
+			);
+			path = "Employee BookTests";
+			sourceTree = "<group>";
+		};
 		40F2D6892870C0C200F57DAC = {
 			isa = PBXGroup;
 			children = (
 				40F2D6942870C0C200F57DAC /* Employee Book */,
+				405F4A7A2871F5D200E80857 /* Employee BookTests */,
 				40F2D6932870C0C200F57DAC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -145,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				40F2D6922870C0C200F57DAC /* Employee Book.app */,
+				405F4A792871F5D200E80857 /* Employee BookTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -256,7 +284,6 @@
 		40F2D6BA2870CBBB00F57DAC /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				40F2D6D22870D86200F57DAC /* GlobalHelpers.swift */,
 				40F2D6D42870D8DA00F57DAC /* Extensions.swift */,
 				403401AB2870EB3F005F29A0 /* Observable.swift */,
 				405F4A6D2871E34500E80857 /* Utilities.swift */,
@@ -406,6 +433,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		405F4A782871F5D200E80857 /* Employee BookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 405F4A7F2871F5D200E80857 /* Build configuration list for PBXNativeTarget "Employee BookTests" */;
+			buildPhases = (
+				405F4A752871F5D200E80857 /* Sources */,
+				405F4A762871F5D200E80857 /* Frameworks */,
+				405F4A772871F5D200E80857 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				405F4A7E2871F5D200E80857 /* PBXTargetDependency */,
+			);
+			name = "Employee BookTests";
+			productName = "Employee BookTests";
+			productReference = 405F4A792871F5D200E80857 /* Employee BookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		40F2D6912870C0C200F57DAC /* Employee Book */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40F2D6A62870C0C400F57DAC /* Build configuration list for PBXNativeTarget "Employee Book" */;
@@ -436,6 +481,10 @@
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					405F4A782871F5D200E80857 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 40F2D6912870C0C200F57DAC;
+					};
 					40F2D6912870C0C200F57DAC = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
@@ -458,11 +507,19 @@
 			projectRoot = "";
 			targets = (
 				40F2D6912870C0C200F57DAC /* Employee Book */,
+				405F4A782871F5D200E80857 /* Employee BookTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		405F4A772871F5D200E80857 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		40F2D6902870C0C200F57DAC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -487,6 +544,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		405F4A752871F5D200E80857 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				405F4A7C2871F5D200E80857 /* Employee_BookTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		40F2D68E2870C0C200F57DAC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -509,7 +574,6 @@
 				405F4A6E2871E34500E80857 /* Utilities.swift in Sources */,
 				403401A12870EA35005F29A0 /* UserRepositoryImplementation.swift in Sources */,
 				40F2D6D82870DFE400F57DAC /* WebViewController.swift in Sources */,
-				40F2D6D32870D86200F57DAC /* GlobalHelpers.swift in Sources */,
 				403401A82870EAE8005F29A0 /* UserService.swift in Sources */,
 				40F2D6E42870E40E00F57DAC /* User.swift in Sources */,
 				403401AA2870EB1B005F29A0 /* UserViewModel.swift in Sources */,
@@ -521,6 +585,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		405F4A7E2871F5D200E80857 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40F2D6912870C0C200F57DAC /* Employee Book */;
+			targetProxy = 405F4A7D2871F5D200E80857 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		40F2D69B2870C0C200F57DAC /* Main.storyboard */ = {
@@ -542,6 +614,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		405F4A802871F5D200E80857 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D7589S3EHF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dimas.Employee-BookTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Employee Book.app/Employee Book";
+			};
+			name = Debug;
+		};
+		405F4A812871F5D200E80857 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D7589S3EHF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dimas.Employee-BookTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Employee Book.app/Employee Book";
+			};
+			name = Release;
+		};
 		40F2D6A42870C0C400F57DAC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -715,6 +823,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		405F4A7F2871F5D200E80857 /* Build configuration list for PBXNativeTarget "Employee BookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				405F4A802871F5D200E80857 /* Debug */,
+				405F4A812871F5D200E80857 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		40F2D68D2870C0C200F57DAC /* Build configuration list for PBXProject "Employee Book" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
